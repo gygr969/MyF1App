@@ -1,0 +1,318 @@
+@import "reset.css";
+.ui-content 
+{
+    background: url("../icons/fondo1.jpg") no-repeat;
+    background-color:#282828;
+    background-size: 100% 100%;
+    color: #fff;
+}
+#contenidoPilotos, #contenidoConstructores, 
+#contenidoUltimaCarrera, #contenidoCalendario, 
+#contenidoCircuitos {
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 90%;
+    margin: 3px auto;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+#contenidoPilotos table, #contenidoConstructores table, 
+#contenidoUltimaCarrera table, #contenidoCalendario table, 
+#contenidoCircuitos table
+{
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+#contenidoPilotos table tr, #contenidoConstructores table tr, 
+#contenidoUltimaCarrera table tr, #contenidoCalendario table tr, 
+#contenidoCircuitos table tr 
+{
+
+    border-bottom: 1px solid #ccc;
+    font-size: 0.8em;
+}
+#contenidoPilotos table tr td, #contenidoConstructores table tr td, 
+#contenidoUltimaCarrera table tr td, #contenidoCalendario table tr td, 
+#contenidoCircuitos table tr td
+{
+    margin-left: 10px;
+    padding: 4px 3px;
+    text-align: center;
+}
+
+.fullTable
+{
+    width: 95%
+}
+
+.halfTable
+{
+   width: 49%;
+   float: left;
+}
+.mapa
+{
+    float: right;
+    margin: 0 auto;
+    width: 49%;
+    height: 420px;
+    margin-top: 10px;
+    
+}
+
+.my-app .ui-listview li .ui-btn p 
+{
+    color: #c0c0c0;
+}
+.my-app .ui-listview li .ui-btn .ui-li-aside 
+{
+    color: #eee;
+}
+.my-app .ui-content .ui-listview
+{
+    margin: 0 auto;
+}
+.ui-listview .ui-li-has-thumb>img:first-child, .ui-listview .ui-li-has-thumb>.ui-btn>img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb
+{
+    max-height: 100%;
+    max-width: none;
+}
+
+/*DESKTOP MEDIA QUERIES*/
+/* First breakpoint*/
+
+@media( min-width: 768px ) 
+{
+    .my-app .ui-content 
+    {
+        padding: .5625em; 
+    }
+    .my-app .ui-listview li 
+    {
+        float: left;
+        width: 30.9333%;
+        height: 14.5em;
+        margin: .5625em 1.2%;
+    }
+    .my-app .ui-listview li > .ui-btn 
+    {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    .my-app .ui-listview li.ui-li-has-thumb .ui-li-thumb 
+    {
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+    } 
+    .my-app .ui-listview li,
+    .my-app .ui-listview li .ui-btn,
+    .my-app .ui-listview .ui-li-thumb 
+    {
+        -webkit-border-radius: inherit;
+        border-radius: inherit;
+    }
+    .my-app .ui-listview .ui-btn-icon-right:after 
+    {
+        display: none;
+    }
+    .my-app .ui-listview h2,
+    .my-app .ui-listview p 
+    {
+        white-space: normal;
+        overflow: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .my-app .ui-listview h2 
+    {
+        font-size: 1.25em;
+        margin: 0;
+        padding: .125em 1em;
+        bottom: 50%;
+    }
+    .my-app .ui-listview p 
+    {
+        font-size: 1em;
+        margin: 0;
+        padding: 0 1.25em;
+        min-height: 50%;
+        bottom: 0;
+    }
+    .ui-listview .ui-li-has-thumb h2,
+    .ui-listview .ui-li-has-thumb p 
+    {
+        background: #111;
+        background: rgba(0,0,0,.8);
+    }
+    .ui-listview .ui-li-has-thumb h2 
+    {
+        bottom: 35%;
+    }
+    .ui-listview .ui-li-has-thumb p 
+    {
+        min-height: 35%;
+    }
+    .my-app .ui-listview .ui-li-aside 
+    {
+        padding: .125em .625em;
+        width: auto;
+        min-height: 0;
+        top: 0;
+        left: auto;
+        bottom: auto;
+        background: #990099;
+        background: rgba(153,0,153,.85);
+        -webkit-border-top-right-radius: inherit;
+        border-top-right-radius: inherit;
+        -webkit-border-bottom-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        -webkit-border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .my-app .ui-listview li 
+    {
+        -moz-box-shadow: 0px 0px 9px #111;
+        -webkit-box-shadow: 0px 0px 9px #111;
+        box-shadow: 0px 0px 9px #111;
+    }
+    .my-app .ui-listview li > .ui-btn:hover 
+    {
+        -moz-box-shadow: 0px 0px 12px #33ccff;
+        -webkit-box-shadow: 0px 0px 12px #33ccff;
+        box-shadow: 0px 0px 12px #33ccff;
+    }
+    .my-app .ui-listview li,
+    .my-app .ui-listview .ui-btn 
+    {
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+}
+/* Second breakpoint */
+@media ( min-width: 1020px ) 
+{
+    .my-app .ui-content 
+    {
+        padding: .625em;
+    }
+    .my-app .ui-listview 
+    {
+        max-width: 62.5em;
+        margin: 0 auto;
+    }
+    .my-app .ui-listview li
+    {
+        width: 18.001%;
+        height: 180px;
+        margin: .625em 1%;
+        margin-top: 200px;
+    }
+    .lastCarrera
+    {
+        font-size: 0.99em;
+    }
+}
+
+/*MEDIA QUERIES Tablet*/
+/*Desde el iPad Mini a iPad*/
+
+@media only screen and (min-device-width:768px) and (max-device-width: 1024px) and (orientation: landscape)
+{
+    .tabletHide
+    {
+        display: none;
+    }
+    .ui-content 
+    {
+        background: url("../icons/fondo3.jpg") no-repeat;
+        background-color:#282828;
+        background-size: 100% 100%;
+        color: #fff;
+    }
+}
+@media (max-device-width: 768px) and (orientation: portrait)
+{
+    .ui-content 
+    {
+        background: url("../icons/fondo2.jpg") no-repeat;
+        background-color:#282828;
+        background-size: 100% 100%;
+        color: #fff;
+    }
+}
+@media (max-width: 768px)
+{
+    .tabletHide
+    {
+        display: none;
+    }
+}
+
+/*MEDIA QUERIES MOBILE*/
+/*Desde el iPhone 4 al iPhone 6s Plus*/
+@media (max-device-width: 736px) and (orientation: landscape)
+{
+    .ui-content 
+    {
+        background: url("../icons/fondo4.jpg") no-repeat;
+        background-color:#282828;
+        background-size: 100% 100%;
+        color: #fff;
+    }
+}
+@media (max-device-width: 414px)
+{
+    .ui-content 
+    {
+        background: url("../icons/fondo4.jpg") no-repeat;
+        background-color:#282828;
+        background-size: 100% 100%;
+        color: #fff;
+    }
+}
+@media (max-width: 414px) 
+{
+    .mobileHide
+    {
+        display: none;
+    }
+    
+    .halfTable
+    {
+        width: 95%;
+    }
+    #contenidoCalendario table
+    {
+        margin: 10px 6px auto;
+    }
+    .textSubMenu
+    {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 375px) 
+{
+    .textSubMenu
+    {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 320px) 
+{
+    .textSubMenu
+    {
+        font-size: 0.6em;
+    }
+}
+

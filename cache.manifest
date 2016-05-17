@@ -1,0 +1,26 @@
+CACHE MANIFEST
+#version 0.001
+
+CACHE:
+http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css
+http://code.jquery.com/jquery-1.11.3.min.js
+http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js
+http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/images/ajax-loader.gif
+css/style.css
+css/reset.css
+icons/pilotos.jpg
+icons/constructores.jpg
+icons/ultimaCarrera.jpg
+icons/calendario.jpg
+icons/circuitos.jpg
+icons/fondo1.jpg
+icons/fondo2.jpg
+icons/fondo3.jpg
+icons/fondo4.jpg
+icons/marker.png
+js/app.js
+
+NETWORK:
+*
+
+
